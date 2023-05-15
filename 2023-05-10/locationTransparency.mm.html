@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Location transparency","c":[{"t":"heading","d":2,"p":{"lines":[4,5]},"v":"My house","c":[{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"example / metaphore with house"},{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"draw house","c":[{"t":"list_item","d":6,"p":{"lines":[7,8]},"v":"super"},{"t":"list_item","d":6,"p":{"lines":[8,9]},"v":"move on beach, mountain etc... it does not work"},{"t":"list_item","d":6,"p":{"lines":[9,10]},"v":"the house is far away: I can't see the children"}]}]},{"t":"heading","d":2,"p":{"lines":[11,12]},"v":"My code","c":[{"t":"list_item","d":4,"p":{"lines":[12,13]},"v":"comparaison between code and"}]},{"t":"heading","d":2,"p":{"lines":[14,15]},"v":"Sensing the nonsense"},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"Coupling","c":[{"t":"list_item","d":4,"p":{"lines":[16,17]},"v":"it make sense in some cases, it depends of context"},{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"difference of connascence"}]},{"t":"heading","d":2,"p":{"lines":[19,20]},"v":"Connascence","c":[{"t":"bullet_list","d":3,"p":{"lines":[20,23]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[20,21]},"v":"production of two or more together"},{"t":"list_item","d":4,"p":{"lines":[21,22]},"v":"having been born together"}]},{"t":"heading","d":3,"p":{"lines":[23,24]},"v":"Example","c":[{"t":"list_item","d":5,"p":{"lines":[25,26]},"v":"of name"},{"t":"list_item","d":5,"p":{"lines":[26,27]},"v":"of type"},{"t":"list_item","d":5,"p":{"lines":[27,28]},"v":"of algorithm / convention"},{"t":"list_item","d":5,"p":{"lines":[28,29]},"v":"of position"}]}]},{"t":"heading","d":2,"p":{"lines":[30,31]},"v":"Aggregate"},{"t":"heading","d":2,"p":{"lines":[32,33]},"v":"Messaging","c":[{"t":"list_item","d":4,"p":{"lines":[33,34]},"v":"command: route to <strong>single handler</strong>. provides <strong>confirmation / result</strong>"},{"t":"list_item","d":4,"p":{"lines":[34,35]},"v":"event: distribute to <strong>all logical handlers</strong>. <strong>no results</strong>"},{"t":"list_item","d":4,"p":{"lines":[35,36]},"v":"query: route to <strong>one or many</strong> handlers provides <strong>merged result</strong>"}]},{"t":"heading","d":2,"p":{"lines":[37,38]},"v":"axon framework","c":[{"t":"list_item","d":4,"p":{"lines":[39,40]},"v":"all communication / event driven / ddd oriented"},{"t":"list_item","d":4,"p":{"lines":[40,41]},"v":"all axon suite"}]}]})</script>
+</body>
+</html>

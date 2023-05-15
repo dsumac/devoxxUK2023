@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Graphqlify your APIs","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"what's in store today","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"graphql"},{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"code"},{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"what's better"}]},{"t":"heading","d":2,"p":{"lines":[8,9]},"v":"graphql, what is it ?","c":[{"t":"list_item","d":4,"p":{"lines":[10,11]},"v":"query language"},{"t":"list_item","d":4,"p":{"lines":[11,12]},"v":"server-side runtime for queries"},{"t":"list_item","d":4,"p":{"lines":[12,13]},"v":"nothing to do with graph DB"},{"t":"list_item","d":4,"p":{"lines":[13,14]},"v":"not a replacement of REST"},{"t":"list_item","d":4,"p":{"lines":[14,15]},"v":"not going all apis desings"}]},{"t":"heading","d":2,"p":{"lines":[16,17]},"v":"schema, query, results","c":[{"t":"list_item","d":4,"p":{"lines":[18,19]},"v":"description of data in our APIS"},{"t":"list_item","d":4,"p":{"lines":[19,20]},"v":"clients ask for exactly what they need"},{"t":"list_item","d":4,"p":{"lines":[20,21]},"v":"tooling","c":[{"t":"list_item","d":6,"p":{"lines":[21,22]},"v":"graphiql: interface to run queries"}]},{"t":"list_item","d":4,"p":{"lines":[23,24]},"v":"exception / errors handling is different than REST","c":[{"t":"list_item","d":6,"p":{"lines":[24,25]},"v":"errors: http 200"}]}]},{"t":"heading","d":2,"p":{"lines":[26,27]},"v":"graphql characteristics ?","c":[{"t":"list_item","d":4,"p":{"lines":[28,29]},"v":"hierachical &amp; aggregator"},{"t":"list_item","d":4,"p":{"lines":[29,30]},"v":"strongly typed"},{"t":"list_item","d":4,"p":{"lines":[30,31]},"v":"validation &amp; type check out-of-the-box"},{"t":"list_item","d":4,"p":{"lines":[31,32]},"v":"api evolution without versioning"}]},{"t":"heading","d":2,"p":{"lines":[33,34]},"v":"graphql maturity ?","c":[{"t":"list_item","d":4,"p":{"lines":[35,36]},"v":"N+1 queries"},{"t":"list_item","d":4,"p":{"lines":[36,37]},"v":"caching complexity"},{"t":"list_item","d":4,"p":{"lines":[37,38]},"v":"community presence"},{"t":"list_item","d":4,"p":{"lines":[38,39]},"v":"pagination: not by default"}]},{"t":"heading","d":2,"p":{"lines":[40,41]},"v":"lib / frameworks","c":[{"t":"list_item","d":4,"p":{"lines":[42,43]},"v":"graphql-java: example with this lib"},{"t":"list_item","d":4,"p":{"lines":[43,44]},"v":"graphql-java-kickstart"},{"t":"list_item","d":4,"p":{"lines":[44,45]},"v":"dgs (client)"}]}]})</script>
+</body>
+</html>

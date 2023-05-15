@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"10 best practices for writing documentation","c":[{"t":"heading","d":2,"p":{"lines":[6,7]},"v":"what types of documentation are you writing ?","c":[{"t":"list_item","d":4,"p":{"lines":[8,9]},"v":"sondage: readme,"}]},{"t":"heading","d":2,"p":{"lines":[10,11]},"v":"practices","c":[{"t":"heading","d":3,"p":{"lines":[12,13]},"v":"read the docs","c":[{"t":"list_item","d":5,"p":{"lines":[14,15]},"v":"RTFM (my opinion)","c":[{"t":"list_item","d":7,"p":{"lines":[15,16]},"v":"start by read the doc"},{"t":"list_item","d":7,"p":{"lines":[16,17]},"v":"look for patterns"},{"t":"list_item","d":7,"p":{"lines":[17,18]},"v":"note sources of confusion"}]}]},{"t":"heading","d":3,"p":{"lines":[19,20]},"v":"identify what needs to be documented","c":[{"t":"list_item","d":5,"p":{"lines":[21,22]},"v":"concepts"},{"t":"list_item","d":5,"p":{"lines":[22,23]},"v":"prerequisites"}]},{"t":"heading","d":3,"p":{"lines":[24,25]},"v":"learn about your reader","c":[{"t":"list_item","d":5,"p":{"lines":[26,27]},"v":"who / how etc."}]},{"t":"heading","d":3,"p":{"lines":[28,29]},"v":"write your docs are skimmable","c":[{"t":"list_item","d":5,"p":{"lines":[30,31]},"v":"descriptive headers"},{"t":"list_item","d":5,"p":{"lines":[31,32]},"v":"short paragraphe"},{"t":"list_item","d":5,"p":{"lines":[32,33]},"v":"lists: bullets"}]},{"t":"heading","d":3,"p":{"lines":[34,35]},"v":"read the style guide","c":[{"t":"list_item","d":5,"p":{"lines":[36,37]},"v":"is there a guideline ? on decathlon ?"},{"t":"list_item","d":5,"p":{"lines":[37,38]},"v":"define a guideline for documentation"}]},{"t":"heading","d":3,"p":{"lines":[39,40]},"v":"a clear code sample is worth a thousand words","c":[{"t":"list_item","d":5,"p":{"lines":[41,42]},"v":"build code samples","c":[{"t":"list_item","d":7,"p":{"lines":[42,43]},"v":"just enough code"},{"t":"list_item","d":7,"p":{"lines":[43,44]},"v":"conform to the best practices"},{"t":"list_item","d":7,"p":{"lines":[44,45]},"v":"optimize for readability"}]}]},{"t":"heading","d":3,"p":{"lines":[46,47]},"v":"always do a self-review","c":[{"t":"list_item","d":5,"p":{"lines":[48,49]},"v":"self-review"},{"t":"list_item","d":5,"p":{"lines":[49,50]},"v":"technical-review"},{"t":"list_item","d":5,"p":{"lines":[50,51]},"v":"make a checklist to check all points"}]},{"t":"heading","d":3,"p":{"lines":[52,53]},"v":"determine your tolerance for outdated documentation","c":[{"t":"list_item","d":5,"p":{"lines":[54,55]},"v":"ways to handle outdated documentation","c":[{"t":"list_item","d":7,"p":{"lines":[55,56]},"v":"one to one"},{"t":"list_item","d":7,"p":{"lines":[56,57]},"v":"guidelines"},{"t":"list_item","d":7,"p":{"lines":[57,58]},"v":"surveys"},{"t":"list_item","d":7,"p":{"lines":[58,59]},"v":"forums"},{"t":"list_item","d":7,"p":{"lines":[59,60]},"v":"merge checklist"},{"t":"list_item","d":7,"p":{"lines":[60,61]},"v":"test automation"}]}]},{"t":"heading","d":3,"p":{"lines":[62,63]},"v":"Future-proof your visuals","c":[{"t":"list_item","d":5,"p":{"lines":[64,65]},"v":"before include media (image or video), consider value instead of maintenance cost"}]},{"t":"heading","d":3,"p":{"lines":[66,67]},"v":"document your documentation decisions","c":[{"t":"list_item","d":5,"p":{"lines":[68,69]},"v":"use the same word for the same thing every time: synonyms are not your friends"},{"t":"list_item","d":5,"p":{"lines":[69,70]},"v":"use glossary"}]}]}]})</script>
+</body>
+</html>

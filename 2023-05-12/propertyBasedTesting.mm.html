@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Property-based testing - let your testing library work for you","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"example: calculating discount","c":[{"t":"bullet_list","d":3,"p":{"lines":[4,6]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"discount depends of"}]},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"traditionnal test","c":[{"t":"list_item","d":5,"p":{"lines":[8,9]},"v":"methods to tests for 10%, 20%, birthday ... discount"},{"t":"list_item","d":5,"p":{"lines":[9,10]},"v":"edge cases: no discount, others"}]},{"t":"heading","d":3,"p":{"lines":[11,12]},"v":"what about property","c":[{"t":"list_item","d":5,"p":{"lines":[12,13]},"v":"should never be lower than 0"},{"t":"list_item","d":5,"p":{"lines":[13,14]},"v":"should not be over 30%"}]}]},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"challenges","c":[{"t":"heading","d":3,"p":{"lines":[17,18]},"v":""},{"t":"heading","d":3,"p":{"lines":[18,19]},"v":"nondeterminism","c":[{"t":"list_item","d":5,"p":{"lines":[19,20]},"v":"the library find cases for you"}]},{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"coming up with properties"}]},{"t":"heading","d":2,"p":{"lines":[22,23]},"v":"strategies","c":[{"t":"list_item","d":4,"p":{"lines":[23,24]},"v":"ex first, properties later"},{"t":"list_item","d":4,"p":{"lines":[24,25]},"v":"properties ...(compelete)"}]},{"t":"heading","d":2,"p":{"lines":[26,27]},"v":"languages","c":[{"t":"list_item","d":4,"p":{"lines":[28,29]},"v":"concept is common"},{"t":"list_item","d":4,"p":{"lines":[29,30]},"v":"lib exists in a lot of language (js ...)"}]},{"t":"heading","d":2,"p":{"lines":[31,32]},"v":"summary","c":[{"t":"list_item","d":4,"p":{"lines":[32,33]},"v":"higher cost, higher value"},{"t":"list_item","d":4,"p":{"lines":[33,34]},"v":"edge cases and misconceptions"},{"t":"list_item","d":4,"p":{"lines":[34,35]},"v":"coming up with properties"},{"t":"list_item","d":4,"p":{"lines":[35,36]},"v":"balance"}]}]})</script>
+</body>
+</html>

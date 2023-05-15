@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Micro frontend in java - jHipster","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"orga","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"UI specialists / middle / DBAs","c":[{"t":"list_item","d":6,"p":{"lines":[5,6]},"v":"siloed functional teams"}]},{"t":"list_item","d":4,"p":{"lines":[7,8]},"v":"&quot;Do one thing and do it well&quot;: unix philosophy"}]},{"t":"heading","d":2,"p":{"lines":[9,10]},"v":"jhipster","c":[{"t":"bullet_list","d":3,"p":{"lines":[11,13]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[11,12]},"v":"using to make an application based on spring from front to back"}]},{"t":"heading","d":3,"p":{"lines":[13,14]},"v":"architecture","c":[{"t":"list_item","d":5,"p":{"lines":[15,16]},"v":"used to make microservices architecture"},{"t":"list_item","d":5,"p":{"lines":[16,17]},"v":"used to make microfrontend architecture"}]}]},{"t":"heading","d":2,"p":{"lines":[18,19]},"v":"avis","c":[{"t":"list_item","d":4,"p":{"lines":[20,21]},"v":"advert. for jhipster"}]}]})</script>
+</body>
+</html>

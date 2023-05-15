@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Flutter Everywhere: Unleashing the Power of Cross-Platform App Development","c":[{"t":"bullet_list","d":2,"p":{"lines":[2,5]},"v":"","c":[{"t":"list_item","d":3,"p":{"lines":[2,3]},"v":"introduction to flutter in fact"},{"t":"list_item","d":3,"p":{"lines":[3,4]},"v":"in dart"}]},{"t":"heading","d":2,"p":{"lines":[5,6]},"v":"widgets","c":[{"t":"list_item","d":4,"p":{"lines":[7,8]},"v":"compose app with widgets / components"},{"t":"list_item","d":4,"p":{"lines":[8,9]},"v":"a lot of widgets exist"},{"t":"list_item","d":4,"p":{"lines":[9,10]},"v":"theme playground exist to tests"}]},{"t":"heading","d":2,"p":{"lines":[11,12]},"v":"dev xp","c":[{"t":"list_item","d":4,"p":{"lines":[13,14]},"v":"dev and share on a url / live coding"}]},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"cross platform","c":[{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"what can I do to have a Design System adaptive on all platform ?","c":[{"t":"list_item","d":6,"p":{"lines":[18,19]},"v":"use <code>.adaptive</code> functions =&gt; default style of the platform"}]}]},{"t":"heading","d":2,"p":{"lines":[20,21]},"v":"features","c":[{"t":"list_item","d":4,"p":{"lines":[22,23]},"v":"animation"},{"t":"list_item","d":4,"p":{"lines":[23,24]},"v":"font variables"},{"t":"list_item","d":4,"p":{"lines":[24,25]},"v":"shaders by default"}]},{"t":"heading","d":2,"p":{"lines":[26,27]},"v":"plateforms / screens","c":[{"t":"list_item","d":4,"p":{"lines":[28,29]},"v":"window, linux, macos, android, ios / web"},{"t":"list_item","d":4,"p":{"lines":[29,30]},"v":"run on apple watch, apple tv too","c":[{"t":"list_item","d":6,"p":{"lines":[30,31]},"v":"remote control supported by default or by community"}]}]},{"t":"heading","d":2,"p":{"lines":[32,33]},"v":"dart 3","c":[{"t":"list_item","d":4,"p":{"lines":[34,35]},"v":"you could call native function or dart will call native platform for us","c":[{"t":"list_item","d":6,"p":{"lines":[35,36]},"v":"ex: pedometer"}]}]},{"t":"heading","d":2,"p":{"lines":[37,38]},"v":"risc-v architecture","c":[{"t":"list_item","d":4,"p":{"lines":[39,40]},"v":"supported: raspberry"}]}]})</script>
+</body>
+</html>

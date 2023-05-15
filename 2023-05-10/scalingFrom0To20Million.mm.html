@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Scaling: from 0 to 20 million","c":[{"t":"heading","d":2,"p":{"lines":[4,5]},"v":"Context","c":[{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"sport application: native, web etc."},{"t":"list_item","d":4,"p":{"lines":[7,8]},"v":"high traffic"}]},{"t":"heading","d":2,"p":{"lines":[9,10]},"v":"way to evolving","c":[{"t":"bullet_list","d":3,"p":{"lines":[11,19]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[11,12]},"v":"1 server with backup on the same machine 😊"},{"t":"list_item","d":4,"p":{"lines":[12,13]},"v":"memory using","c":[{"t":"list_item","d":6,"p":{"lines":[13,14]},"v":"cache using: memcache"}]},{"t":"list_item","d":4,"p":{"lines":[14,15]},"v":"apache httpd + php"},{"t":"list_item","d":4,"p":{"lines":[15,16]},"v":"varnish using","c":[{"t":"list_item","d":6,"p":{"lines":[16,17]},"v":"request coalescing (merge requests)"}]},{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"from ?? to mongoDb to postgresql to"}]},{"t":"heading","d":3,"p":{"lines":[19,20]},"v":"mongoDB using","c":[{"t":"list_item","d":5,"p":{"lines":[21,22]},"v":"why ? because ! =&gt; not ADR !"},{"t":"list_item","d":5,"p":{"lines":[22,23]},"v":"drawbacks","c":[{"t":"list_item","d":7,"p":{"lines":[23,24]},"v":"replication issues"},{"t":"list_item","d":7,"p":{"lines":[24,25]},"v":"data types errors (no support for foreign keys)"},{"t":"list_item","d":7,"p":{"lines":[25,26]},"v":"difficult to analyse data"}]},{"t":"list_item","d":5,"p":{"lines":[27,28]},"v":"go back to postgresql"}]},{"t":"heading","d":3,"p":{"lines":[29,30]},"v":"move cache layer","c":[{"t":"list_item","d":5,"p":{"lines":[31,32]},"v":"outside of the cloud","c":[{"t":"list_item","d":7,"p":{"lines":[32,33]},"v":"reduced * 10 of the cost"}]}]},{"t":"heading","d":3,"p":{"lines":[34,35]},"v":"longer cache","c":[{"t":"list_item","d":5,"p":{"lines":[36,37]},"v":"from 10s to 1 mins"}]},{"t":"heading","d":3,"p":{"lines":[38,39]},"v":"what's happens if nb users exceed users capacity","c":[{"t":"list_item","d":5,"p":{"lines":[40,41]},"v":"dedicated + VPS","c":[{"t":"list_item","d":7,"p":{"lines":[41,42]},"v":"scalling"}]}]},{"t":"heading","d":3,"p":{"lines":[43,44]},"v":"experience is different in the world","c":[{"t":"list_item","d":5,"p":{"lines":[44,45]},"v":"put varnish all around the world","c":[{"t":"list_item","d":7,"p":{"lines":[45,46]},"v":"distributed cache"}]}]},{"t":"heading","d":3,"p":{"lines":[47,48]},"v":"datacenter burned (on premise)","c":[{"t":"list_item","d":5,"p":{"lines":[48,49]},"v":"ovh"}]},{"t":"heading","d":3,"p":{"lines":[50,51]},"v":"kubernetes using","c":[{"t":"list_item","d":5,"p":{"lines":[51,52]},"v":"it was difficult"}]},{"t":"heading","d":3,"p":{"lines":[53,54]},"v":"real time updates","c":[{"t":"list_item","d":5,"p":{"lines":[54,55]},"v":"NATS messaging"}]}]},{"t":"heading","d":2,"p":{"lines":[56,57]},"v":"Conclusion","c":[{"t":"list_item","d":4,"p":{"lines":[58,59]},"v":"Infrasctructure represents 0.8 % of revenue"},{"t":"list_item","d":4,"p":{"lines":[59,60]},"v":"be stateless where possible"},{"t":"list_item","d":4,"p":{"lines":[60,61]},"v":"know how users interct with the app"},{"t":"list_item","d":4,"p":{"lines":[61,62]},"v":"cache !"},{"t":"list_item","d":4,"p":{"lines":[62,63]},"v":"the right tool for the job and chage if necessary"},{"t":"list_item","d":4,"p":{"lines":[63,64]},"v":"optimize what you have need"}]}]})</script>
+</body>
+</html>

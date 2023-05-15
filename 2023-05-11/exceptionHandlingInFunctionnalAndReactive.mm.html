@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Exception handling in functionnal and reactive programming","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"functionnal VS imperative","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"more easy to read etc. (IMO, not all time)"}]},{"t":"heading","d":2,"p":{"lines":[6,7]},"v":"exception","c":[{"t":"bullet_list","d":3,"p":{"lines":[8,11]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[8,9]},"v":"exception handling is an imperative style programming idea"},{"t":"list_item","d":4,"p":{"lines":[9,10]},"v":"functionnal programming and exception handling are mutually exclusive"}]},{"t":"heading","d":3,"p":{"lines":[11,12]},"v":"with functionnal code","c":[{"t":"list_item","d":5,"p":{"lines":[12,13]},"v":"deal with it down stream"},{"t":"list_item","d":5,"p":{"lines":[13,14]},"v":"treat errors as a form of data"}]}]},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"live coding","c":[{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"example with a little java main application","c":[{"t":"list_item","d":6,"p":{"lines":[18,19]},"v":"code interface"},{"t":"list_item","d":6,"p":{"lines":[19,20]},"v":"use union of data"},{"t":"list_item","d":6,"p":{"lines":[20,21]},"v":"<code>public sealed interface Try&lt;T&gt; permits Success, Failure ..</code>"}]}]}]})</script>
+</body>
+</html>

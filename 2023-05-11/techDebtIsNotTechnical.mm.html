@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Technical debt isn't technical","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"What is technical debt ?","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"something no quite right <strong>you pay interest on</strong>"},{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"create opportunity cost and risk"},{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"code you don't like the look of"}]},{"t":"heading","d":2,"p":{"lines":[8,9]},"v":"perfect is the enemy of good","c":[{"t":"list_item","d":4,"p":{"lines":[10,11]},"v":"tech debt is a normal trade-off"}]},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"be mindful of constraints","c":[{"t":"list_item","d":4,"p":{"lines":[14,15]},"v":"team engagement"},{"t":"list_item","d":4,"p":{"lines":[15,16]},"v":"stakeholders","c":[{"t":"list_item","d":6,"p":{"lines":[16,17]},"v":"clients, management etc."}]},{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"KPIs"}]},{"t":"heading","d":2,"p":{"lines":[19,20]},"v":"top principles","c":[{"t":"list_item","d":4,"p":{"lines":[21,22]},"v":"decrease operational complexity"},{"t":"list_item","d":4,"p":{"lines":[22,23]},"v":"fast feedback: tests, deployment etc."},{"t":"list_item","d":4,"p":{"lines":[23,24]},"v":"local first"}]},{"t":"heading","d":2,"p":{"lines":[25,26]},"v":"key things we did","c":[{"t":"list_item","d":4,"p":{"lines":[27,28]},"v":"local dev","c":[{"t":"list_item","d":6,"p":{"lines":[28,29]},"v":"docker / docker compose using"},{"t":"list_item","d":6,"p":{"lines":[29,30]},"v":"interface to see all running services on local"}]},{"t":"list_item","d":4,"p":{"lines":[30,31]},"v":"frictionless dev env."},{"t":"list_item","d":4,"p":{"lines":[31,32]},"v":"marginal gains"}]},{"t":"heading","d":2,"p":{"lines":[33,34]},"v":"quality views","c":[{"t":"list_item","d":4,"p":{"lines":[35,36]},"v":"scoring"},{"t":"list_item","d":4,"p":{"lines":[36,37]},"v":"identification of the degree of implementation (maturity matrix like)"}]},{"t":"heading","d":2,"p":{"lines":[38,39]},"v":"key takeaways","c":[{"t":"list_item","d":4,"p":{"lines":[40,41]},"v":"understanding that tech debt is good and bad"},{"t":"list_item","d":4,"p":{"lines":[41,42]},"v":"need to tackle the big and small challenges"},{"t":"list_item","d":4,"p":{"lines":[42,43]},"v":"get through it and reach higher performance"}]}]})</script>
+</body>
+</html>
